@@ -1680,3 +1680,37 @@ h3 {
     font-size: 24px !important;
   }
 }
+
+/* Responsive: show top banner properly on mobile and tablet */
+@media (max-width: 1024px) {
+  .happy-diwali-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 5px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+
+  .happy-diwali-banner h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .happy-diwali-banner h1 span {
+    font-size: 30px;
+  }
+
+  .left-text {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 150px; /* Push content below the top text */
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
