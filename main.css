@@ -28,6 +28,7 @@ body {
   width: 100%;
   height: 100%;
  }
+
 .left-text {
   position: fixed;
   left: 5%;
@@ -1587,4 +1588,95 @@ h3 {
 .container * {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
+}
+
+.left-text {
+  position: fixed;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 350px;
+  color: #fff;
+  z-index: 10;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 2s ease-out;
+}
+
+.left-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ff9900, #ff4500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.left-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .left-text {
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    max-width: 85%;
+    padding: 15px;
+  }
+
+  .left-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .left-text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .happy-diwali-banner {
+    top: auto;
+    bottom: 10%;
+  }
+
+  .happy-diwali-banner h3 {
+    font-size: 14px;
+  }
+
+  h1 span {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-text {
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .left-text h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .left-text p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .happy-diwali-banner h3 {
+    font-size: 12px;
+  }
+
+  h1 span {
+    font-size: 24px !important;
+  }
 }
