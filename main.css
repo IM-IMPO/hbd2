@@ -1763,3 +1763,19 @@ h3 {
   }
 }
 
+/* Center flowers on Android/mobile view */
+@media (max-width: 768px) {
+  .flowers {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scale(0.8); /* center + slightly scale down */
+    z-index: 1;
+  }
+
+  .flower {
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+  }
+}
+
