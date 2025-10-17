@@ -1716,7 +1716,7 @@ h3 {
 
 /* Responsive layout for mobile and tablet */
 @media (max-width: 1024px) {
-  /* Top banner stays visible */
+  /* Keep banner fixed at top */
   .happy-diwali-banner {
     position: fixed;
     top: 0;
@@ -1737,12 +1737,12 @@ h3 {
     font-size: 30px;
   }
 
-  /* Center text but move slightly upward */
+  /* Move "A Special Day" text just below the banner */
   .left-text {
-    position: absolute;
-    top: 38%; /* moved higher */
+    position: relative;
+    top: 170px; /* adjust distance from banner */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     text-align: center;
     max-width: 90%;
     background: rgba(0, 0, 0, 0.35);
@@ -1752,7 +1752,7 @@ h3 {
   }
 
   .left-text h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .left-text p {
