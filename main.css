@@ -1740,7 +1740,7 @@ h3 {
   /* Move "A Special Day" text just below the banner */
   .left-text {
     position: relative;
-    top: 300px; /* adjust distance from banner */
+    top: 120px; /* adjust distance from banner */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
