@@ -1760,3 +1760,25 @@ h3 {
     line-height: 1.6;
   }
 }
+
+/*flow*/
+/* Center flower only on mobile screens */
+@media (max-width: 768px) {
+  .flowers {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scale(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent sideways scrolling on mobile */
+  }
+}
+
