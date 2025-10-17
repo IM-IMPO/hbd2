@@ -1769,7 +1769,7 @@ h3 {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%) scale(0.8); /* center + slightly scale down */
+    transform: translateX(-45%) scale(0.8); /* moved slightly to the right */
     z-index: 1;
   }
 
