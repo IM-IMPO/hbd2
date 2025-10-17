@@ -1714,3 +1714,48 @@ h3 {
   }
 }
 
+/* Responsive layout for mobile and tablet */
+@media (max-width: 1024px) {
+  /* Keep the top banner the same as before */
+  .happy-diwali-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 5px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+
+  .happy-diwali-banner h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .happy-diwali-banner h1 span {
+    font-size: 30px;
+  }
+
+  /* Center "A Special Day" message */
+  .left-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .left-text h2 {
+    font-size: 28px;
+  }
+
+  .left-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
